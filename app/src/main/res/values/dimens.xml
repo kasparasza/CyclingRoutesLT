@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimensions of GridView:-->
+    <dimen name="grid_view_col_width">160dp</dimen>
+    <dimen name="grid_view_col_vertical_space">8dp</dimen>
+    <dimen name="grid_view_col_horizontal_space">8dp</dimen>
+    <dimen name="grid_view_padding">8dp</dimen>
+
+    <!-- Dimensions of CardView:-->
+    <dimen name="card_width">@dimen/grid_view_col_width</dimen>
+    <dimen name="card_height">@dimen/grid_view_col_width</dimen>
+    <dimen name="card_difficulty_ic_size">24dp</dimen>
+    <dimen name="card_text_size_1">12sp</dimen>
+    <dimen name="card_text_size_2">16sp</dimen>
+    <dimen name="card_padding">4dp</dimen>
+
+    <!-- Spacing used in route detailed view:-->
+    <dimen name="padding_1">4dp</dimen>
+    <dimen name="padding_2">8dp</dimen>
+    <dimen name="space_between_views_1">4dp</dimen>
+
+    <!-- Dimensions of ImageView:-->
+    <dimen name="height_of_image_1">200dp</dimen>
+    <dimen name="width_of_image_2_4by3">66dp</dimen>
+    <dimen name="height_of_image_2_4by3">50dp</dimen>
+
+    <!-- Dimensions of Tabs:-->
+    <dimen name="height_of_tab_text">12sp</dimen>
+    <dimen name="height_of_tab_indicator">0dp</dimen>
+
+</resources>

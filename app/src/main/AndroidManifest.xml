@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kasparasza.cyclingrouteslt">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mylauncher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_my_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- The main/home activity (it has no parent activity) -->
+        <activity android:name=".N01_A01_RegionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- A child of the main/home activity -->
+        <activity
+            android:name=".N02_A01_RouteDetailsActivity"
+            android:parentActivityName=".N01_A01_RegionActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N01_A01_RegionActivity" />
+        </activity>
+        <!-- A child of the level 2 activity -->
+        <activity
+            android:name=".N03_A01_FullscreenMapImageActivity"
+            android:parentActivityName=".N02_A01_RouteDetailsActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N02_A01_RouteDetailsActivity" />
+        </activity>
+        <!-- A child of the level 2 activity -->
+        <activity android:name=".N03_A02_FullscreenImageActivity"></activity>
+    </application>
+
+</manifest>

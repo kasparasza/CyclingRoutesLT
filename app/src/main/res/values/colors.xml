@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B5E20</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="windowBackground">#E8F5E9</color>
+
+    <!-- Colors of CardView:-->
+    <color name="color_text_black">#000000</color>
+    <color name="color_text_background_transparent">#99FFFFFF</color>
+    <color name="color_text_background_white">#FFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <!-- Colors of ViewPager tabs:-->
+    <color name="tab_inactive">#388E3C</color>
+    <color name="tab_selected">#A5D6A7</color>
+    <color name="tab_text_white">#FFFFFF</color>
+
+    <!-- Colors of TextViews:-->
+    <color name="text_as_hyperlink">#01579B</color>
+
+</resources>

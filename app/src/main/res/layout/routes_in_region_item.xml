@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/grid_view_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height">
+        <!-- Note: layout_width was set to "match parent", since width of the parent -
+        a column in the gridView - is being adjusted programmatically -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="9">
+
+                <ImageView
+                    android:id="@+id/route_thumb_image_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/test_route_image" />
+
+                <TextView
+                    android:id="@+id/route_text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_text_background_transparent"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/card_text_size_2"
+                    android:gravity="center"
+                    android:lines="2"
+                    tools:text="From the capital to lakes" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="3"
+                android:padding="@dimen/card_padding"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/route_text_start_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/card_text_size_1"
+                    android:textColor="@color/color_text_black"
+                    tools:text="Vilnius - Zalieji" />
+
+                <TextView
+                    android:id="@+id/route_text_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/card_text_size_1"
+                    android:textColor="@color/color_text_black"
+                    android:layout_below="@id/route_text_start_end"
+                    tools:text="70 km" />
+
+                <ImageView
+                    android:id="@+id/route_difficulty_icon"
+                    android:layout_width="@dimen/card_difficulty_ic_size"
+                    android:layout_height="@dimen/card_difficulty_ic_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    tools:src="@drawable/ic_difficulty_one"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

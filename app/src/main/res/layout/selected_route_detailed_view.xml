@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/route_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/route_map_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_of_image_1"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/test_route_image" />
+
+                <ImageView
+                    android:id="@+id/route_difficulty_icon"
+                    android:layout_width="@dimen/card_difficulty_ic_size"
+                    android:layout_height="@dimen/card_difficulty_ic_size"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/color_text_background_white"
+                    tools:src="@drawable/ic_difficulty_one" />
+
+                <TextView
+                    android:id="@+id/route_text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_text_background_transparent"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/card_text_size_2"
+                    tools:text="From the capital to lakes"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/route_text_start_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/route_text_name"
+                    android:background="@color/color_text_background_transparent"
+                    android:textColor="@color/color_text_black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/card_text_size_1"
+                    tools:text="Vilnius - Zalieji" />
+
+                <TextView
+                    android:id="@+id/route_text_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/route_text_start_end"
+                    android:background="@color/color_text_background_transparent"
+                    android:textColor="@color/color_text_black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/card_text_size_1"
+                    tools:text="70 km" />
+
+                <ImageView
+                    android:layout_width="@dimen/card_difficulty_ic_size"
+                    android:layout_height="@dimen/card_difficulty_ic_size"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ic_zoom_out" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/route_map_link_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_2"
+                android:textColor="@color/text_as_hyperlink"
+                android:textStyle="bold"
+                android:text="@string/Open_a_map" />
+
+            <TextView
+                android:id="@+id/route_detailed_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_2"
+                android:layout_marginBottom="@dimen/padding_2"
+                tools:text="@string/east_r01_full_description" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thumbnail_image_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/route_thumb_image_1"
+                android:layout_width="@dimen/width_of_image_2_4by3"
+                android:layout_height="@dimen/height_of_image_2_4by3"
+                android:scaleType="centerCrop"
+                android:background="@drawable/test_route_image" />
+
+            <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"/>
+
+            <ImageButton
+                android:id="@+id/route_thumb_image_2"
+                android:layout_width="@dimen/width_of_image_2_4by3"
+                android:layout_height="@dimen/height_of_image_2_4by3"
+                android:scaleType="centerCrop"
+                android:background="@drawable/test_route_image" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="match_parent"/>
+
+            <ImageButton
+                android:id="@+id/route_thumb_image_3"
+                android:layout_width="@dimen/width_of_image_2_4by3"
+                android:layout_height="@dimen/height_of_image_2_4by3"
+                android:scaleType="centerCrop"
+                android:background="@drawable/test_route_image" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="match_parent"/>
+
+            <ImageButton
+                android:id="@+id/route_thumb_image_4"
+                android:layout_width="@dimen/width_of_image_2_4by3"
+                android:layout_height="@dimen/height_of_image_2_4by3"
+                android:scaleType="centerCrop"
+                android:background="@drawable/test_route_image" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
